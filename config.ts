@@ -36,7 +36,7 @@ export const siteConfig = {
   // Place .mp3 files in /public/music/ and list them here.
   // Example: if your file is public/music/song.mp3, set src: "/music/song.mp3"
   music: [
-    { title: "Song Title", artist: "Artist Name", src: "/music/song1.mp3" },
+    { title: "Over", artist: "Christian Phillips", src: "/music/over.mp3" },
   ],
 
   // ── SEO / meta ───────────────────────────────────────
