@@ -100,7 +100,7 @@ export default function Home() {
             font-light
             text-white
             tracking-[0.28em]
-            uppercase
+
             text-[clamp(2rem,8vw,5.5rem)]
             leading-none
           "
