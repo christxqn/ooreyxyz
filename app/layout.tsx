@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config";
+import Nav from "@/components/Nav";
 
 // ─── FONT SETUP ──────────────────────────────────────────────────────────────
 // To switch fonts, change the import and variable here + in tailwind.config.ts
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cormorant.variable} antialiased bg-black`}>
+        <Nav />
         {children}
       </body>
     </html>

@@ -32,6 +32,13 @@ export const siteConfig = {
     },
   ],
 
+  // ── Shop ─────────────────────────────────────────────
+  // Add items here. Place product images in /public/shop/.
+  // Set shop: [] to show "coming soon"
+  shop: [
+    // { name: "Item Name", price: "$20", image: "/shop/item1.jpg", link: "#" },
+  ] as { name: string; price: string; image?: string; link: string }[],
+
   // ── Music ────────────────────────────────────────────
   // Place .mp3 files in /public/music/ and list them here.
   // Example: if your file is public/music/song.mp3, set src: "/music/song.mp3"

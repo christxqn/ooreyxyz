@@ -2,6 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Nav ─────────────────────────────────────────────────── */
+.site-nav {
+  position: fixed;
+  top: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-tab {
+  color: rgba(176, 176, 176, 0.45);
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: lowercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tab:hover {
+  color: rgba(200, 180, 230, 0.8);
+}
+
+.nav-tab-active {
+  color: rgba(220, 210, 240, 0.9);
+  border-bottom-color: rgba(200, 180, 230, 0.4);
+}
+
+/* ── Shop ────────────────────────────────────────────────── */
+.shop-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 2rem 4rem;
+}
+
+.shop-heading {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 3rem;
+}
+
+.shop-empty {
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: rgba(176, 176, 176, 0.35);
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.shop-card:hover {
+  border-color: rgba(200, 180, 230, 0.25);
+  transform: translateY(-2px);
+}
+
+.shop-img-wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.shop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+}
+
+.shop-item-name {
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.shop-item-price {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(200, 180, 230, 0.7);
+}
+
+/* ── Game ────────────────────────────────────────────────── */
+.game-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+
+.game-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.game-blocked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.game-blocked-text {
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: rgba(176, 176, 176, 0.4);
+}
+
+.game-link {
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: rgba(200, 180, 230, 0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.game-link:hover {
+  color: rgba(220, 210, 240, 1);
+}
+
 /* ── Reset ───────────────────────────────────────────────── */
 *,
 *::before,
