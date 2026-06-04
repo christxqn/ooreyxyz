@@ -159,6 +159,19 @@
   color: rgba(220, 210, 240, 1);
 }
 
+/* ── Schedule ────────────────────────────────────────────── */
+.schedule-page {
+  height: 100vh;
+  width: 100%;
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-page .calendly-inline-widget {
+  flex: 1;
+}
+
 /* ── Reset ───────────────────────────────────────────────── */
 *,
 *::before,
