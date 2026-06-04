@@ -4,7 +4,7 @@
 
 export const siteConfig = {
   // ── Your name (displayed center screen) ──────────────
-  name: "oorey1",
+  name: "oorey",
 
   // ── Background video ─────────────────────────────────
   // Place your .mp4 in the /public folder and set the filename here.
@@ -36,7 +36,7 @@ export const siteConfig = {
   // Place .mp3 files in /public/music/ and list them here.
   // Example: if your file is public/music/song.mp3, set src: "/music/song.mp3"
   music: [
-    { title: "Over", artist: "oorey1", src: "/music/over.mp3" },
+    { title: "Over", artist: "oorey", src: "/music/over.mp3" },
   ],
 
   // ── SEO / meta ───────────────────────────────────────
