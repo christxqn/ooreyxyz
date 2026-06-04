@@ -4,7 +4,7 @@
 
 export const siteConfig = {
   // ── Your name (displayed center screen) ──────────────
-  name: "Christian Phillips",
+  name: "oorey1",
 
   // ── Background video ─────────────────────────────────
   // Place your .mp4 in the /public folder and set the filename here.
