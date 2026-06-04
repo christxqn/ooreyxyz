@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config";
+import AudioPlayer from "@/components/AudioPlayer";
 
 // ─── SVG Social Icons ─────────────────────────────────────────────────────────
 // To add a new platform, add an entry to this map and add it to config.ts
@@ -130,6 +131,9 @@ export default function Home() {
           })}
         </div>
       </div>
+
+      {/* ── Audio Player ───────────────────────────────────── */}
+      <AudioPlayer />
     </main>
   );
 }
