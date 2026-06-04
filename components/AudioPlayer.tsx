@@ -7,8 +7,8 @@ const songs = siteConfig.music;
 
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [playing, setPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.6);
+  const [playing, setPlaying] = useState(true);
+  const [volume, setVolume] = useState(0.5);
   const [showVolume, setShowVolume] = useState(false);
   const [trackIndex, setTrackIndex] = useState(0);
 
@@ -17,10 +17,18 @@ export default function AudioPlayer() {
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    audio.volume = volume;
+    audio.volume = 0.5;
     audio.src = current.src;
-    if (playing) audio.play().catch(() => setPlaying(false));
+    audio.play().catch(() => setPlaying(false));
   }, [trackIndex]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.volume = 0.5;
+    audio.src = current.src;
+    audio.play().catch(() => setPlaying(false));
+  }, []);
 
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume;
